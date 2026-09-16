@@ -38,9 +38,32 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: clamp(4rem, 10vw, 8rem);
-    letter-spacing: -0.08em;
+    font-size: clamp(5rem, 14vw, 10rem);
+    font-weight: 800;
+    letter-spacing: -0.12em;
+    line-height: 0.9;
     color: #ffffff;
+
+    text-shadow:
+        0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+header h1 {
+    animation: heroLetter 1s ease-out both;
+}
+
+@keyframes heroLetter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        letter-spacing: -0.05em;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        letter-spacing: -0.12em;
+    }
 }
 
 header p {
@@ -48,6 +71,8 @@ header p {
     margin-top: 15px;
     font-size: 1.25rem;
     color: #8fa6bf;
+
+    animation: heroSubtitle 1s ease-out 0.25s both;
 }
 
 main {
