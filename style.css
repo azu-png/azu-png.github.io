@@ -105,3 +105,27 @@ section {
 section:hover {
     border-left-color: #5d8fbd;
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px 20px;
+    background: rgba(8, 13, 24, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1c2a3d;
+}
+
+nav a {
+    color: #8fa6bf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
